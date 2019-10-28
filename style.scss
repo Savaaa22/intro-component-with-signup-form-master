@@ -1,0 +1,343 @@
+// Primary Colors
+$red: hsl(0, 100%, 74%);
+$green: hsl(154, 59%, 51%);
+
+// Accent Colors
+$blue: hsl(248, 32%, 49%);
+
+// Neutral Colors
+$dblue: hsl(249, 10%, 26%);
+$gblue: hsl(246, 25%, 77%);
+
+@import url("https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.hidden {
+  display: none;
+}
+body {
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
+  // FONT 400,500,600,700
+  background: url(/images/bg-intro-mobile.png);
+  background-position: center center;
+  background-color: $red;
+}
+.container {
+  width: 90%;
+  margin: 0 auto;
+  text-align: center;
+  .heading {
+    color: #fff;
+    font-size: 1.7rem;
+    margin-top: 65px;
+    font-weight: 700;
+  }
+  .para {
+    color: #e2e2e2;
+    font-weight: 500;
+    font-size: 1rem;
+    margin-top: 18px;
+  }
+  .purple_btn {
+    background-color: $blue;
+    color: #e2e2e2;
+    border: none;
+    border-radius: 10px;
+    padding: 15px;
+    margin-top: 45px;
+    box-shadow: 0px 7px 0px 0px rgba(0, 0, 0, 0.15);
+    cursor: pointer;
+    p {
+      width: 70%;
+      margin: 0 auto;
+    }
+    .purple_btn--text {
+      font-weight: 600;
+      color: #fff;
+    }
+  }
+  .form-box {
+    background-color: #fff;
+    border-radius: 10px;
+    margin: 0 auto;
+    margin-top: 20px;
+    box-shadow: 0px 7px 0px 0px rgba(0, 0, 0, 0.15);
+    margin-bottom: 55px;
+    position: relative;
+    .form {
+      input {
+        width: 85%;
+        border: 1px solid #bababa;
+        border-radius: 5px;
+        height: 50px;
+        margin: 7px;
+      }
+      .first-input {
+        margin-top: 25px;
+      }
+      .submit-btn {
+        background-color: $green;
+        color: #fff;
+        text-transform: uppercase;
+        font-weight: 700;
+        letter-spacing: 1px;
+        font-size: 0.9rem;
+        border: none;
+        box-shadow: 0px 3px 0px 0px darken($green, 10%);
+        cursor: pointer;
+      }
+      .error-icon1 {
+        position: absolute;
+        right: 45px;
+        top: 40px;
+        z-index: 1;
+      }
+      .error-icon2 {
+        position: absolute;
+        right: 45px;
+        top: 120px;
+        z-index: 1;
+      }
+      .error-icon3 {
+        position: absolute;
+        right: 45px;
+        top: 201px;
+        z-index: 1;
+      }
+      .error-icon4 {
+        position: absolute;
+        right: 45px;
+        top: 283px;
+        z-index: 1;
+      }
+      .error-border {
+        border: 1px solid $red;
+        border-radius: 5px;
+      }
+      .error-text {
+        font-size: 11px;
+        color: $red;
+        float: right;
+        margin-right: 27px;
+        font-style: italic;
+      }
+    }
+    .terms {
+      color: #bababa;
+      font-size: 12px;
+      width: 70%;
+      margin: 0 auto;
+      text-align: center;
+      padding-bottom: 20px;
+      .terms_red {
+        color: $red;
+        font-weight: 600;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+::placeholder {
+  padding-left: 15px;
+  color: #7a7a7a;
+  font-weight: 600;
+  font-size: 14px;
+}
+.attribution {
+  font-size: 12px;
+  text-align: center;
+  a {
+    color: #e2e2e2;
+    text-decoration: none;
+    font-weight: 600;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    display: grid;
+    height: 80vh;
+    width: 85%;
+    grid-template-columns: 43% 57%;
+    column-gap: 30px;
+    justify-items: stretch;
+    align-items: center;
+    justify-content: space-between;
+    .grid1 {
+      justify-self: start;
+      text-align: left;
+      .heading {
+        font-size: 33px;
+        font-weight: 700;
+      }
+      .para {
+        font-size: 19px;
+        font-weight: 500;
+      }
+    }
+    .grid2 {
+      align-self: stretch;
+      margin-top: 10vh;
+      .purple_btn {
+        p {
+          width: 100%;
+        }
+      }
+      .form-box {
+        .form {
+          .terms {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+  .attribution {
+    font-size: 17px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .container {
+    .grid1 {
+      .heading {
+        font-size: 45px;
+      }
+      .para {
+        font-size: 21px;
+      }
+    }
+    .grid2 {
+      .purple_btn {
+        padding: 20px;
+        font-size: 18px;
+      }
+      .form-box {
+        padding-bottom: 40px;
+        .form {
+          input {
+            width: 85%;
+            border: 1px solid #bababa;
+            border-radius: 5px;
+            height: 65px;
+            margin: 10px;
+          }
+          .first-input {
+            margin-top: 55px;
+          }
+          .submit-btn {
+            background-color: $green;
+            color: #fff;
+            text-transform: uppercase;
+            font-weight: 700;
+            letter-spacing: 1px;
+            font-size: 1.1rem;
+            border: none;
+            box-shadow: 0px 3px 0px 0px darken($green, 10%);
+          }
+          .error-icon1 {
+            display: none;
+          }
+          .error-icon2 {
+            display: none;
+          }
+          .error-icon3 {
+            display: none;
+          }
+          .error-icon4 {
+            display: none;
+          }
+          .error-border {
+            border: 1px solid $red;
+            border-radius: 5px;
+          }
+          .error-text {
+            font-size: 12px;
+            color: $red;
+            float: right;
+            margin-right: 45px;
+            font-style: italic;
+          }
+        }
+      }
+      .terms {
+        color: #bababa;
+        font-size: 17px;
+        width: 100%;
+        margin: 0 auto;
+        text-align: center;
+        padding: 30px;
+        .terms_red {
+          color: $red;
+          font-weight: 600;
+        }
+      }
+    }
+  }
+  ::placeholder {
+    padding-left: 35px;
+    color: #7a7a7a;
+    font-weight: 600;
+    font-size: 18px;
+  }
+  .attribution {
+    margin-top: 200px;
+    font-size: 20px;
+  }
+}
+@media (min-width: 1200px) {
+  body {
+    background: url(/images/bg-intro-desktop.png);
+    background-color: $red;
+  }
+  .container {
+    .grid2 {
+      width: 80%;
+      .form-box {
+        .form {
+          .error-icon1 {
+            position: absolute;
+            right: 55px;
+            top: 40px;
+            z-index: 1;
+          }
+          .error-icon2 {
+            position: absolute;
+            right: 55px;
+            top: 120px;
+            z-index: 1;
+          }
+          .error-icon3 {
+            position: absolute;
+            right: 55px;
+            top: 201px;
+            z-index: 1;
+          }
+          .error-icon4 {
+            position: absolute;
+            right: 55px;
+            top: 283px;
+            z-index: 1;
+          }
+          .error-border {
+            border: 1px solid $red;
+            border-radius: 5px;
+          }
+          .error-text {
+            font-size: 12px;
+            color: $red;
+            float: right;
+            margin-right: 45px;
+            font-style: italic;
+          }
+        }
+      }
+    }
+  }
+}
