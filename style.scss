@@ -23,7 +23,7 @@ body {
   font-size: 16px;
   font-family: "Poppins", sans-serif;
   // FONT 400,500,600,700
-  background: url(/images/bg-intro-mobile.png);
+  background: url(./images/bg-intro-mobile.png);
   background-position: center center;
   background-color: $red;
 }
@@ -293,7 +293,7 @@ body {
 }
 @media (min-width: 1200px) {
   body {
-    background: url(/images/bg-intro-desktop.png);
+    background: url(./images/bg-intro-desktop.png);
     background-color: $red;
   }
   .container {
