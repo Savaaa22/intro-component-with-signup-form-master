@@ -3,7 +3,7 @@
   padding: 0;
   margin: 0;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 .hidden {
@@ -13,7 +13,7 @@
 body {
   font-size: 16px;
   font-family: "Poppins", sans-serif;
-  background: url(/images/bg-intro-mobile.png);
+  background: url(./images/bg-intro-mobile.png);
   background-position: center center;
   background-color: #ff7a7a;
 }
@@ -46,7 +46,7 @@ body {
   padding: 15px;
   margin-top: 45px;
   -webkit-box-shadow: 0px 7px 0px 0px rgba(0, 0, 0, 0.15);
-          box-shadow: 0px 7px 0px 0px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 7px 0px 0px rgba(0, 0, 0, 0.15);
   cursor: pointer;
 }
 
@@ -66,7 +66,7 @@ body {
   margin: 0 auto;
   margin-top: 20px;
   -webkit-box-shadow: 0px 7px 0px 0px rgba(0, 0, 0, 0.15);
-          box-shadow: 0px 7px 0px 0px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 7px 0px 0px rgba(0, 0, 0, 0.15);
   margin-bottom: 55px;
   position: relative;
 }
@@ -92,7 +92,7 @@ body {
   font-size: 0.9rem;
   border: none;
   -webkit-box-shadow: 0px 3px 0px 0px #2ba671;
-          box-shadow: 0px 3px 0px 0px #2ba671;
+  box-shadow: 0px 3px 0px 0px #2ba671;
   cursor: pointer;
 }
 
@@ -198,20 +198,20 @@ body {
     height: 80vh;
     width: 85%;
     -ms-grid-columns: 43% 57%;
-        grid-template-columns: 43% 57%;
+    grid-template-columns: 43% 57%;
     -webkit-column-gap: 30px;
-            column-gap: 30px;
+    column-gap: 30px;
     justify-items: stretch;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
   }
   .container .grid1 {
     -ms-grid-column-align: start;
-        justify-self: start;
+    justify-self: start;
     text-align: left;
   }
   .container .grid1 .heading {
@@ -224,8 +224,8 @@ body {
   }
   .container .grid2 {
     -ms-flex-item-align: stretch;
-        -ms-grid-row-align: stretch;
-        align-self: stretch;
+    -ms-grid-row-align: stretch;
+    align-self: stretch;
     margin-top: 10vh;
   }
   .container .grid2 .purple_btn p {
@@ -272,7 +272,7 @@ body {
     font-size: 1.1rem;
     border: none;
     -webkit-box-shadow: 0px 3px 0px 0px #2ba671;
-            box-shadow: 0px 3px 0px 0px #2ba671;
+    box-shadow: 0px 3px 0px 0px #2ba671;
   }
   .container .grid2 .form-box .form .error-icon1 {
     display: none;
@@ -341,7 +341,7 @@ body {
 
 @media (min-width: 1200px) {
   body {
-    background: url(/images/bg-intro-desktop.png);
+    background: url(./images/bg-intro-desktop.png);
     background-color: #ff7a7a;
   }
   .container .grid2 {
